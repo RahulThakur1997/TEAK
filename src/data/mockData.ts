@@ -283,7 +283,8 @@ export const DIRECTORS = [
     focus: 'On-site sequencing, direct trade management, structural detailing, quality control',
     phone: '+61 3 9000 8325',
     email: 'james@teakbuildinggroup.com.au',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
+    image: '/james-director.jpg',
+    fallbackImage: 'https://teakbuildinggroup.com.au/images/about-james.jpg',
     quote: '"If you build it with your own hands, you treat every millimeter like your name is on it. Because it is."'
   },
   {
@@ -293,7 +294,8 @@ export const DIRECTORS = [
     focus: 'Cost planning, procurement velocity, council permits, authority sign-offs, lease negotiations',
     phone: '+61 3 9000 8326',
     email: 'matthew@teakbuildinggroup.com.au',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    image: '/matthew-director.jpg',
+    fallbackImage: 'https://media.licdn.com/dms/image/v2/D4E22AQFJ66iA-LAlKw/feedshare-shrink_800/B4EZ0ZX2T7GkAc-/0/1774247175921?e=1793836800&v=beta&t=0XD8AUsk-n_R1pOVYt7gG84GQXb-UZzyF9aU9YUPuu4',
     quote: '"Zero bureaucracy. When clients have a critical decision, they don’t talk to a junior coordinator. They talk directly to us."'
   }
 ];

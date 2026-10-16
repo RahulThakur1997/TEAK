@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { UploadCloud, CheckCircle2, FileText, X, Phone, ShieldCheck, ArrowRight } from 'lucide-react';
+import { UploadCloud, CheckCircle2, FileText, X, Phone, ShieldCheck } from 'lucide-react';
 
 interface TenderUploadModalProps {
   isOpen: boolean;
@@ -50,51 +50,51 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-xl overflow-y-auto">
-      <div className="bg-[#0f1117] border border-[#d4af37]/40 max-w-xl w-full p-6 sm:p-8 rounded-2xl shadow-[0_0_50px_rgba(212,175,55,0.25)] relative my-8 animate-fadeIn">
+      <div className="bg-[#111317] border border-[#CCCCCC]/40 max-w-xl w-full p-6 sm:p-8 shadow-[0_0_40px_rgba(204,204,204,0.15)] relative my-8 animate-fadeIn">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-[#94a3b8] hover:text-white text-xs font-mono px-3 py-1.5 rounded-lg border border-white/10"
+          className="absolute top-4 right-4 text-[#999999] hover:text-white text-xs font-mono px-3 py-1.5 border border-white/10"
         >
           [CLOSE ESC]
         </button>
 
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181c24] border border-[#d4af37]/30 text-[#d4af37] text-xs font-mono mb-2">
-          <UploadCloud className="w-3.5 h-3.5 text-[#d4af37]" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#181B20] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-2">
+          <UploadCloud className="w-3.5 h-3.5 text-white" />
           <span>DIRECT TENDER SUBMISSION PORTAL</span>
         </div>
 
         <h3 className="text-2xl font-bold text-white font-heading mb-1">
           Upload Tender & Constructability Brief
         </h3>
-        <p className="text-xs text-[#94a3b8] mb-6">
+        <p className="text-xs text-[#999999] mb-6">
           Architectural drawings, MEP schedules, and ECI briefs go straight to Commercial Director Matthew Papadimitriou.
         </p>
 
         {isSubmitted ? (
-          <div className="p-6 bg-gradient-to-b from-[#181c24] to-[#0b0c10] border border-[#d4af37]/40 rounded-xl text-center space-y-4">
-            <div className="w-12 h-12 mx-auto bg-gradient-to-tr from-[#d4af37] to-[#c5a880] text-black rounded-full flex items-center justify-center shadow-lg">
+          <div className="p-6 bg-[#090A0C] border border-[#CCCCCC]/40 text-center space-y-4">
+            <div className="w-12 h-12 mx-auto bg-white text-black flex items-center justify-center shadow-lg">
               <CheckCircle2 className="w-7 h-7" />
             </div>
-            <span className="text-xs font-mono text-[#d4af37] tracking-widest font-bold uppercase block">
+            <span className="text-xs font-mono text-[#CCCCCC] tracking-widest font-bold uppercase block">
               TENDER LODGED • REF: {tenderId}
             </span>
             <h4 className="text-xl font-bold text-white font-heading">
               Documentation Received
             </h4>
-            <p className="text-xs sm:text-sm text-[#cbd5e1] max-w-md mx-auto leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#E2E8F0] max-w-md mx-auto leading-relaxed">
               Thank you, {form.contactName || 'there'}. Matthew Papadimitriou and our commercial estimating desk have received your documents for <span className="text-white font-medium">{form.projectName || 'your project'}</span>. We initiate quantity take-offs and confirm tender receipt within 4 hours.
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:0390008326"
-                className="flex-1 py-3 px-4 bg-gradient-to-r from-[#d4af37] to-[#c5a880] text-black font-bold text-xs uppercase tracking-wider text-center rounded-lg hover:from-white hover:to-[#e2e8f0]"
+                className="flex-1 py-3 px-4 bg-white text-black font-bold text-xs uppercase tracking-wider text-center hover:bg-[#CCCCCC]"
               >
                 Call Matthew Directly: 03 9000 8326
               </a>
               <button
                 onClick={onClose}
-                className="py-3 px-5 border border-white/20 text-white rounded-lg text-xs uppercase tracking-wider"
+                className="py-3 px-5 border border-white/20 text-white text-xs uppercase tracking-wider hover:border-white"
               >
                 Close
               </button>
@@ -108,31 +108,31 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
               onDragLeave={() => setIsDragging(false)}
               onDrop={handleSimulatedDrop}
               onClick={handleAddSampleFile}
-              className={`p-6 rounded-xl border-2 border-dashed text-center transition-all cursor-pointer ${
+              className={`p-6 border-2 border-dashed text-center transition-all cursor-pointer ${
                 isDragging
-                  ? 'border-[#d4af37] bg-[#181c24]'
-                  : 'border-white/15 bg-[#0a0c10] hover:border-[#d4af37]/50'
+                  ? 'border-white bg-[#181B20]'
+                  : 'border-white/15 bg-[#090A0C] hover:border-[#CCCCCC]/50'
               }`}
             >
-              <UploadCloud className="w-8 h-8 text-[#d4af37] mx-auto mb-2" />
+              <UploadCloud className="w-8 h-8 text-white mx-auto mb-2" />
               <span className="text-xs font-bold text-white block">
                 Drag and drop drawing sets, or click to attach files
               </span>
-              <span className="text-[10px] text-[#94a3b8] block mt-1">
+              <span className="text-[10px] text-[#999999] block mt-1 font-mono">
                 Supports PDF, DWG, RVT, ZIP up to 100MB per file
               </span>
             </div>
 
             {/* Attached files list */}
             {fileList.length > 0 && (
-              <div className="space-y-1.5 p-3 rounded-lg bg-[#07080a] border border-white/10 text-xs">
-                <span className="text-[10px] font-mono text-[#d4af37] block mb-1">
+              <div className="space-y-1.5 p-3 bg-[#090A0C] border border-white/10 text-xs">
+                <span className="text-[10px] font-mono text-[#CCCCCC] block mb-1">
                   ATTACHED FILES ({fileList.length}):
                 </span>
                 {fileList.map((f, i) => (
                   <div key={i} className="flex items-center justify-between text-white py-1 border-b border-white/5 last:border-0">
                     <span className="flex items-center gap-1.5 truncate max-w-[340px]">
-                      <FileText className="w-3.5 h-3.5 text-[#c5a880] shrink-0" />
+                      <FileText className="w-3.5 h-3.5 text-[#CCCCCC] shrink-0" />
                       <span>{f}</span>
                     </span>
                     <button
@@ -141,7 +141,7 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                         e.stopPropagation();
                         setFileList(fileList.filter((_, idx) => idx !== i));
                       }}
-                      className="text-[#94a3b8] hover:text-red-400 text-xs font-mono"
+                      className="text-[#999999] hover:text-white text-xs font-mono"
                     >
                       ×
                     </button>
@@ -152,7 +152,7 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="text-[11px] font-medium text-[#cbd5e1] block mb-1">
+                <label className="text-[11px] font-medium text-[#E2E8F0] block mb-1">
                   Project Title / Venue *
                 </label>
                 <input
@@ -161,12 +161,12 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                   placeholder="e.g. Flinders Lane Dining Room"
                   value={form.projectName}
                   onChange={(e) => setForm({ ...form, projectName: e.target.value })}
-                  className="w-full bg-[#07080a] border border-white/15 rounded-lg p-2.5 text-xs text-white placeholder-[#64748b] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-[#090A0C] border border-white/15 p-2.5 text-xs text-white placeholder-[#666666] focus:border-[#CCCCCC] focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="text-[11px] font-medium text-[#cbd5e1] block mb-1">
+                <label className="text-[11px] font-medium text-[#E2E8F0] block mb-1">
                   Project Address / Suburb *
                 </label>
                 <input
@@ -175,14 +175,14 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                   placeholder="e.g. 101 Collins St, Melbourne"
                   value={form.address}
                   onChange={(e) => setForm({ ...form, address: e.target.value })}
-                  className="w-full bg-[#07080a] border border-white/15 rounded-lg p-2.5 text-xs text-white placeholder-[#64748b] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-[#090A0C] border border-white/15 p-2.5 text-xs text-white placeholder-[#666666] focus:border-[#CCCCCC] focus:outline-none"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="text-[11px] font-medium text-[#cbd5e1] block mb-1">
+                <label className="text-[11px] font-medium text-[#E2E8F0] block mb-1">
                   Your Full Name *
                 </label>
                 <input
@@ -191,12 +191,12 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                   placeholder="e.g. Matthew Vance"
                   value={form.contactName}
                   onChange={(e) => setForm({ ...form, contactName: e.target.value })}
-                  className="w-full bg-[#07080a] border border-white/15 rounded-lg p-2.5 text-xs text-white placeholder-[#64748b] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-[#090A0C] border border-white/15 p-2.5 text-xs text-white placeholder-[#666666] focus:border-[#CCCCCC] focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="text-[11px] font-medium text-[#cbd5e1] block mb-1">
+                <label className="text-[11px] font-medium text-[#E2E8F0] block mb-1">
                   Direct Phone *
                 </label>
                 <input
@@ -205,13 +205,13 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                   placeholder="0400 000 000"
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                  className="w-full bg-[#07080a] border border-white/15 rounded-lg p-2.5 text-xs text-white placeholder-[#64748b] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-[#090A0C] border border-white/15 p-2.5 text-xs text-white placeholder-[#666666] focus:border-[#CCCCCC] focus:outline-none"
                 />
               </div>
             </div>
 
             <div>
-              <label className="text-[11px] font-medium text-[#cbd5e1] block mb-1">
+              <label className="text-[11px] font-medium text-[#E2E8F0] block mb-1">
                 Tender Deadline & Key Notes
               </label>
               <textarea
@@ -219,14 +219,14 @@ export const TenderUploadModal: React.FC<TenderUploadModalProps> = ({ isOpen, on
                 placeholder="e.g. Tenders close 14 Nov. Early contractor involvement (ECI) preferred on steel structure."
                 value={form.notes}
                 onChange={(e) => setForm({ ...form, notes: e.target.value })}
-                className="w-full bg-[#07080a] border border-white/15 rounded-lg p-2.5 text-xs text-white placeholder-[#64748b] focus:border-[#d4af37] focus:outline-none resize-none"
+                className="w-full bg-[#090A0C] border border-white/15 p-2.5 text-xs text-white placeholder-[#666666] focus:border-[#CCCCCC] focus:outline-none resize-none"
               />
             </div>
 
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-3.5 bg-gradient-to-r from-[#d4af37] via-[#e2c67c] to-[#c5a880] text-black font-bold text-xs uppercase tracking-wider rounded-lg hover:from-white hover:to-[#e2e8f0] transition-all shadow-lg flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-[#CCCCCC] transition-all shadow-[0_0_20px_rgba(204,204,204,0.25)] flex items-center justify-center gap-2"
               >
                 <span>Submit Tender to Directors Desk ↗</span>
               </button>

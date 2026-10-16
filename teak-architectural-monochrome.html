@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#090A0C] text-[#E2E8F0]">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TEAK Building Group | Melbourne Commercial & Hospitality Builders</title>
+  <meta name="description" content="Melbourne's premier commercial and hospitality fit-out builder. Director-led on site with in-house master trades. Registered Commercial Builder CB-L 67337." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans (NO SERIF) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --font-heading: 'Space Grotesk', 'Syne', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+    body {
+      font-family: var(--font-body);
+      background-color: #090A0C;
+      color: #E2E8F0;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: var(--font-heading);
+      letter-spacing: -0.04em;
+    }
+    .silver-glow {
+      box-shadow: 0 0 20px -3px rgba(204, 204, 204, 0.25);
+    }
+    .silver-border {
+      border: 1px solid rgba(204, 204, 204, 0.3);
+    }
+    .bg-architectural-grid {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090A0C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #181B20;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #CCCCCC;
+    }
+  </style>
+</head>
+<body class="bg-[#090A0C] text-[#E2E8F0] antialiased selection:bg-[#CCCCCC] selection:text-black">
+
+  <!-- TOP NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4 pb-2">
+    <div class="max-w-7xl mx-auto bg-[#111317]/85 backdrop-blur-xl border border-[#CCCCCC]/30 py-3 px-6 flex items-center justify-between shadow-[0_10px_35px_-5px_rgba(0,0,0,0.9),0_0_20px_rgba(204,204,204,0.1)]">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-[#111317] border border-[#CCCCCC]/40 flex items-center justify-center font-black text-white text-base shadow-[0_0_15px_rgba(204,204,204,0.2)]">
+          T
+        </div>
+        <div>
+          <span class="text-xl font-extrabold text-white font-heading tracking-tighter">TEAK</span>
+          <span class="text-[9px] font-mono tracking-[0.2em] text-[#CCCCCC] uppercase block -mt-1">BUILDING GROUP</span>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center space-x-7">
+        <a href="#overview" class="text-xs uppercase tracking-[0.16em] text-[#999999] hover:text-white transition-colors">Overview</a>
+        <a href="#advantage" class="text-xs uppercase tracking-[0.16em] text-[#999999] hover:text-white transition-colors">In-House Advantage</a>
+        <a href="#sectors" class="text-xs uppercase tracking-[0.16em] text-[#999999] hover:text-white transition-colors">Sectors</a>
+        <a href="#transformations" class="text-xs uppercase tracking-[0.16em] text-[#999999] hover:text-white transition-colors">Transformations</a>
+        <a href="#endorsements" class="text-xs uppercase tracking-[0.16em] text-[#999999] hover:text-white transition-colors">Client Endorsements</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <a href="tel:0390008325" class="hidden sm:inline text-xs font-mono text-[#999999] hover:text-white">03 9000 TEAK</a>
+        <a href="#qualification-terminal" class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-black bg-white hover:bg-[#CCCCCC] transition-all shadow-[0_0_20px_rgba(204,204,204,0.25)] border border-white">
+          Consult a Director ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+  <section id="overview" class="relative min-h-screen pt-28 pb-16 lg:pt-36 lg:pb-24 flex items-center justify-center overflow-hidden bg-[#090A0C]">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <video autoplay muted loop playsinline preload="auto" class="w-full h-full object-cover opacity-45 filter contrast-125 grayscale" poster="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1920&q=80">
+        <source src="hero-bg.mp4" type="video/mp4">
+        <source src="https://cdn.jumpshare.com/preview/ul7Gxzt1WJbWYc1lC_s-Vwmb3lc2dD_cemUCbzl3pRkHXtX1YDvtlKrIe5mN0k7CmonMEH8arT25r6l6Y7BTDClQ1aySFEj8MvfMe-Fv-5KXUyHxfq6tk4n0gA3SReLgLsnH8wVoOsd6fkt2hqyUPm6yjbN-I2pg_cnoHs_AmgI-4h3unfsVFOq8J.mp4" type="video/mp4">
+        <source src="https://jumpshare.com/s/qJGAR5iGURutXfn7sBvI" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#090A0C] via-[#090A0C]/80 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#090A0C] via-transparent to-[#090A0C]/60"></div>
+      <div class="absolute inset-0 bg-architectural-grid opacity-25"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- LEFT: VALUE PROP -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#111317] border border-[#CCCCCC]/30 shadow-[0_0_15px_rgba(204,204,204,0.15)] text-[#E2E8F0] text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-white animate-ping shadow-[0_0_8px_#ffffff]"></span>
+            <span class="tracking-widest font-bold">[ REG. BUILDER CB-L 67337 • MELBOURNE ]</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading tracking-tighter leading-[1.03]">
+            <span class="text-white block">BUILDERS BY TRADE.</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#CCCCCC] to-[#777777] block">
+              DIRECTOR-LED ON SITE.
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#999999] max-w-2xl leading-relaxed">
+            No layers of site bureaucracy. We deploy our own in-house carpentry, framing, and plastering crews with founder-level accountability.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-2.5 text-xs font-mono">
+            <div class="px-3 py-1.5 bg-[#111317] border border-white/10 text-white">[ Est. 2018 Melbourne ]</div>
+            <div class="px-3 py-1.5 bg-[#111317] border border-[#CCCCCC]/40 text-[#CCCCCC] shadow-[0_0_10px_rgba(204,204,204,0.15)]">[ CB-L 67337 Registered ]</div>
+            <div class="px-3 py-1.5 bg-[#111317] border border-white/10 text-white">[ 100% Director-Led ]</div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="#advantage" class="px-6 py-3.5 bg-white text-black hover:bg-[#CCCCCC] font-bold text-xs uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(204,204,204,0.25)] border border-white">
+              The In-House Advantage →
+            </a>
+            <a href="#transformations" class="px-6 py-3.5 border border-[#CCCCCC]/30 hover:border-white text-[#CCCCCC] hover:text-white text-xs font-semibold tracking-wider transition-colors">
+              Before & After Slider ↓
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: FROSTED PLATINUM INTAKE TERMINAL -->
+        <div class="lg:col-span-5">
+          <div id="qualification-terminal" class="border border-[#CCCCCC]/30 bg-[#111317]/85 backdrop-blur-xl p-6 sm:p-8 shadow-[0_0_30px_rgba(204,204,204,0.12)]">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+              <div>
+                <span class="text-[10px] font-mono font-bold tracking-[0.25em] text-[#CCCCCC] uppercase block mb-1">
+                  PROJECT INTAKE TERMINAL
+                </span>
+                <h3 class="text-xl font-extrabold text-white font-heading tracking-tight">Director Constructability Review</h3>
+              </div>
+              <span id="step-indicator" class="text-xs font-mono font-bold text-white bg-[#181B20] border border-[#CCCCCC]/30 px-2.5 py-1">
+                STEP 01 / 04
+              </span>
+            </div>
+
+            <!-- Progress line -->
+            <div class="w-full bg-[#181B20] h-1 mb-6">
+              <div id="progress-bar" class="bg-gradient-to-r from-white to-[#CCCCCC] h-full shadow-[0_0_10px_rgba(204,204,204,0.5)] transition-all duration-300" style="width: 25%;"></div>
+            </div>
+
+            <div id="intake-form-container">
+              <!-- Step 1: Sector -->
+              <div id="step-1" class="space-y-3">
+                <p class="text-xs text-[#E2E8F0] mb-2">Select project space sector:</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <button type="button" class="sector-btn active p-3 text-left border border-[#CCCCCC] bg-[#181B20] text-white shadow-[0_0_15px_rgba(204,204,204,0.2)]" data-val="Hospitality">
+                    <span class="text-xs font-bold block">Hospitality / Cafe</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Bars, Dining & Kitchens</span>
+                  </button>
+                  <button type="button" class="sector-btn p-3 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="Commercial">
+                    <span class="text-xs font-bold block text-white">Commercial Workplace</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Corporate HQs & Suites</span>
+                  </button>
+                  <button type="button" class="sector-btn p-3 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="Medical">
+                    <span class="text-xs font-bold block text-white">Medical & Specialist</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Clinics & Day Surgeries</span>
+                  </button>
+                  <button type="button" class="sector-btn p-3 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="Retail">
+                    <span class="text-xs font-bold block text-white">Retail & Flagship</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Luxury Boutiques</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 2: Floor Area (Hidden initially) -->
+              <div id="step-2" class="space-y-3 hidden">
+                <p class="text-xs text-[#E2E8F0] mb-2">Approximate floor area footprint:</p>
+                <div class="grid grid-cols-2 gap-2">
+                  <button type="button" class="area-btn active p-3.5 text-left border border-[#CCCCCC] bg-[#181B20] text-white shadow-[0_0_15px_rgba(204,204,204,0.2)]" data-val="Under 150m²">
+                    <span class="text-xs font-bold font-mono block">Under 150m²</span>
+                    <span class="text-[10px] text-[#999999]">Boutique Footprint</span>
+                  </button>
+                  <button type="button" class="area-btn p-3.5 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="150–500m²">
+                    <span class="text-xs font-bold font-mono block text-white">150–500m²</span>
+                    <span class="text-[10px] text-[#999999]">Standard Commercial</span>
+                  </button>
+                  <button type="button" class="area-btn p-3.5 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="500–1,500m²">
+                    <span class="text-xs font-bold font-mono block text-white">500–1,500m²</span>
+                    <span class="text-[10px] text-[#999999]">Enterprise Floor</span>
+                  </button>
+                  <button type="button" class="area-btn p-3.5 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="1,500m²+">
+                    <span class="text-xs font-bold font-mono block text-white">1,500m²+</span>
+                    <span class="text-[10px] text-[#999999]">Major Floorplate</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 3: Programme (Hidden initially) -->
+              <div id="step-3" class="space-y-3 hidden">
+                <p class="text-xs text-[#E2E8F0] mb-2">Target site commencement / handover:</p>
+                <div class="space-y-2">
+                  <button type="button" class="prog-btn active w-full p-3 text-left border border-[#CCCCCC] bg-[#181B20] text-white shadow-[0_0_15px_rgba(204,204,204,0.2)]" data-val="Immediate / Within 60 Days">
+                    <span class="text-xs font-bold block">Immediate / Within 60 Days</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Fast-track site commencement</span>
+                  </button>
+                  <button type="button" class="prog-btn w-full p-3 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="3–6 Months">
+                    <span class="text-xs font-bold block text-white">3–6 Months</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Documentation & permits in progress</span>
+                  </button>
+                  <button type="button" class="prog-btn w-full p-3 text-left border border-white/10 bg-[#090A0C] text-[#999999] hover:border-white/30" data-val="Preliminary Tender / ECI">
+                    <span class="text-xs font-bold block text-white">Preliminary Tender / ECI</span>
+                    <span class="text-[10px] font-mono text-[#999999]">Early contractor involvement</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Step 4: Director Request (Hidden initially) -->
+              <div id="step-4" class="space-y-3 hidden">
+                <div class="grid grid-cols-2 gap-2">
+                  <div>
+                    <label class="text-[10px] font-mono text-[#999999] block mb-1">Full Name *</label>
+                    <input id="input-name" type="text" placeholder="e.g. Nicholas Reed" class="w-full bg-[#090A0C] border border-white/20 p-2 text-xs text-white focus:border-[#CCCCCC] focus:outline-none" />
+                  </div>
+                  <div>
+                    <label class="text-[10px] font-mono text-[#999999] block mb-1">Direct Phone *</label>
+                    <input id="input-phone" type="tel" placeholder="0400 000 000" class="w-full bg-[#090A0C] border border-white/20 p-2 text-xs text-white focus:border-[#CCCCCC] focus:outline-none" />
+                  </div>
+                </div>
+                <div>
+                  <label class="text-[10px] font-mono text-[#999999] block mb-1">Consultation Preference</label>
+                  <div class="grid grid-cols-2 gap-2">
+                    <button type="button" class="dir-btn active p-2 border border-[#CCCCCC] bg-[#181B20] text-white text-xs font-bold text-left" data-val="James Papadimitriou">
+                      James (Trades & Site)
+                    </button>
+                    <button type="button" class="dir-btn p-2 border border-white/10 bg-[#090A0C] text-[#999999] text-xs font-bold text-left" data-val="Matthew Papadimitriou">
+                      Matthew (Contracts)
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nav controls -->
+              <div class="flex items-center justify-between pt-6 border-t border-white/10 mt-6">
+                <button id="btn-back" type="button" class="py-2 px-4 text-xs font-semibold text-[#999999] hover:text-white border border-white/10 hidden">
+                  ← Back
+                </button>
+                <div id="step-note" class="text-[10px] font-mono text-[#777777]">
+                  CB-L 67337 Registered
+                </div>
+                <button id="btn-next" type="button" class="py-3 px-6 bg-white text-black hover:bg-[#CCCCCC] text-xs font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(204,204,204,0.25)]">
+                  Continue Step →
+                </button>
+              </div>
+            </div>
+
+            <!-- Confirmation message (Hidden) -->
+            <div id="intake-confirmation" class="hidden text-center py-6 space-y-4">
+              <div class="w-12 h-12 mx-auto bg-white text-black flex items-center justify-center font-bold text-xl shadow-[0_0_20px_rgba(204,204,204,0.5)]">
+                ✓
+              </div>
+              <span class="text-[10px] font-mono tracking-widest text-[#CCCCCC] uppercase block font-semibold">
+                INTAKE LODGED • REF: TEAK-MELB-2026
+              </span>
+              <h4 class="text-2xl font-extrabold text-white font-heading">Brief Dispatched to Directors</h4>
+              <p class="text-xs text-[#CCCCCC] max-w-sm mx-auto leading-relaxed">
+                Co-Directors James & Matthew Papadimitriou review site constructability and return with preliminary feasibility within 4 business hours.
+              </p>
+              <a href="tel:0390008325" class="inline-block py-3 px-6 bg-white text-black font-bold text-xs uppercase tracking-wider shadow-lg">
+                Direct Call: 03 9000 8325
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION: "ALL DELIVERY. NO THEATRE." -->
+  <section id="advantage" class="py-24 bg-[#090A0C] border-t border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#111317] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-4">
+          <span class="w-1.5 h-1.5 bg-white inline-block"></span>
+          <span>OPERATIONAL ARCHITECTURE • EST. 2018</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-heading tracking-tighter">
+          All Delivery. <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#CCCCCC] to-[#777777]">No Theatre.</span>
+        </h2>
+        <p class="mt-4 text-base text-[#999999] leading-relaxed">
+          Commercial building in Melbourne has been burdened by corporate management tiers who add costs while dodging responsibility. We standardise zero bureaucracy: the men who sign the contract are the men walking your site.
+        </p>
+      </div>
+
+      <!-- 3-PILLAR SWITCHER -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
+        <div class="lg:col-span-6 space-y-3">
+          <div id="pillar-0" class="pillar-tab cursor-pointer p-5 border border-[#CCCCCC] bg-[#181B20] shadow-[0_0_25px_rgba(204,204,204,0.2)]">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-mono font-bold px-2 py-0.5 bg-white text-black">01</span>
+              <span class="text-xs font-mono text-[#CCCCCC]">DIRECT PAYROLL</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-white">In-House Trades</h3>
+            <p class="text-xs text-[#999999] mt-2">14+ Master Carpenters, Framers & Joiners on full-time direct payroll eliminating critical path subcontractor margins.</p>
+          </div>
+
+          <div id="pillar-1" class="pillar-tab cursor-pointer p-5 border border-white/10 bg-[#111317] hover:border-white/30">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-mono font-bold px-2 py-0.5 bg-white/10 text-[#999999]">02</span>
+              <span class="text-xs font-mono text-[#777777]">GUARANTEED GMP</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-[#CCCCCC]">Cost Control</h3>
+            <p class="text-xs text-[#777777] mt-2">Zero variation extortion through rigorous constructability reviews and early long-lead procurement.</p>
+          </div>
+
+          <div id="pillar-2" class="pillar-tab cursor-pointer p-5 border border-white/10 bg-[#111317] hover:border-white/30">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-mono font-bold px-2 py-0.5 bg-white/10 text-[#999999]">03</span>
+              <span class="text-xs font-mono text-[#777777]">ZERO BUREAUCRACY</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-[#CCCCCC]">Founder-Led</h3>
+            <p class="text-xs text-[#777777] mt-2">Co-Directors James & Matthew on your concrete slab daily at 06:45 driving trade resolution in minutes.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 border border-[#CCCCCC]/40 bg-[#111317] overflow-hidden relative shadow-[0_0_30px_rgba(204,204,204,0.12)] min-h-[380px]">
+          <img id="pillar-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Trade Execution" class="w-full h-full object-cover filter contrast-125 grayscale brightness-85" />
+          <div class="absolute bottom-6 left-6 right-6 p-4 bg-[#090A0C]/90 backdrop-blur-md border border-white/15">
+            <div class="flex justify-between text-xs font-mono text-[#CCCCCC] mb-1">
+              <span>MELBOURNE CRITICAL PATH</span>
+              <span>100% ACCOUNTABILITY</span>
+            </div>
+            <div id="pillar-tagline" class="text-sm font-bold text-white font-heading">Direct Master Carpentry & Joinery Fabrication</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORS GRID WITH 1PX METALLIC BORDERS -->
+  <section id="sectors" class="py-24 bg-[#090A0C]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#111317] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-3">
+            <span class="w-1.5 h-1.5 bg-white inline-block"></span>
+            <span>CAPABILITIES</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-extrabold text-white font-heading tracking-tighter">Services & Sectors.</h2>
+        </div>
+        <div class="text-xs font-mono text-[#999999] max-w-sm">Architectural fit-out execution designed for strict handover schedules and acoustic precision.</div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Hospitality -->
+        <div class="group bg-[#111317] border border-white/10 hover:border-[#CCCCCC] hover:shadow-[0_0_25px_rgba(204,204,204,0.2)] transition-all duration-400 p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-[#CCCCCC] tracking-widest block mb-2">01 • DINING & BARS</span>
+            <h3 class="text-xl font-bold text-white font-heading mb-2">Hospitality</h3>
+            <p class="text-xs text-[#999999] leading-relaxed mb-4">High-cadence dining rooms, espresso roasteries, grease-trap hydraulics, and custom acoustic ceiling baffles.</p>
+          </div>
+          <div class="pt-4 border-t border-white/10 text-[10px] font-mono text-[#CCCCCC]">Brunswick East & Fitzroy • 6–8 Weeks</div>
+        </div>
+
+        <!-- Commercial -->
+        <div class="group bg-[#111317] border border-white/10 hover:border-[#CCCCCC] hover:shadow-[0_0_25px_rgba(204,204,204,0.2)] transition-all duration-400 p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-[#CCCCCC] tracking-widest block mb-2">02 • WORKPLACE HQS</span>
+            <h3 class="text-xl font-bold text-white font-heading mb-2">Commercial Office</h3>
+            <p class="text-xs text-[#999999] leading-relaxed mb-4">Acoustic glazed suites (Rw 48+), structured comms rooms, agile floorplates, and boardrooms.</p>
+          </div>
+          <div class="pt-4 border-t border-white/10 text-[10px] font-mono text-[#CCCCCC]">Collins St CBD • 8–11 Weeks</div>
+        </div>
+
+        <!-- Medical -->
+        <div class="group bg-[#111317] border border-white/10 hover:border-[#CCCCCC] hover:shadow-[0_0_25px_rgba(204,204,204,0.2)] transition-all duration-400 p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-[#CCCCCC] tracking-widest block mb-2">03 • CLINICAL SUITES</span>
+            <h3 class="text-xl font-bold text-white font-heading mb-2">Specialist Healthcare</h3>
+            <p class="text-xs text-[#999999] leading-relaxed mb-4">AS 4187 infection control compliance, lead-lined X-ray enclosures, medical gas manifold piping.</p>
+          </div>
+          <div class="pt-4 border-t border-white/10 text-[10px] font-mono text-[#CCCCCC]">East Melbourne • 7–9 Weeks</div>
+        </div>
+
+        <!-- Retail -->
+        <div class="group bg-[#111317] border border-white/10 hover:border-[#CCCCCC] hover:shadow-[0_0_25px_rgba(204,204,204,0.2)] transition-all duration-400 p-6 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-[#CCCCCC] tracking-widest block mb-2">04 • FLAGSHIPS</span>
+            <h3 class="text-xl font-bold text-white font-heading mb-2">Bespoke Retail</h3>
+            <p class="text-xs text-[#999999] leading-relaxed mb-4">Seamless micro-cement floors, museum-grade directional optics, and custom blackened steel display fixtures.</p>
+          </div>
+          <div class="pt-4 border-t border-white/10 text-[10px] font-mono text-[#CCCCCC]">High St Armadale • 5–7 Weeks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE BEFORE/AFTER SPLIT SLIDER -->
+  <section id="transformations" class="py-24 bg-[#090A0C] border-t border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#111317] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-3">
+            <span class="w-1.5 h-1.5 bg-white inline-block"></span>
+            <span>TRANSFORMATION SHOWCASE</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-extrabold text-white font-heading tracking-tighter">Before & After.</h2>
+        </div>
+        <div class="text-xs font-mono text-[#999999]">Drag the metallic divider line to reveal raw structural shell versus completed fit-out.</div>
+      </div>
+
+      <!-- Comparison Container -->
+      <div class="bg-[#111317] border border-[#CCCCCC]/30 p-2 sm:p-4 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_20px_rgba(204,204,204,0.1)]">
+        <div id="slider-container" class="relative w-full h-[380px] sm:h-[480px] lg:h-[580px] overflow-hidden select-none cursor-ew-resize border border-white/10">
+          <!-- After (base) -->
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" alt="Completed Fit-Out" class="absolute inset-0 w-full h-full object-cover filter contrast-115 brightness-95" />
+          <div class="absolute top-4 right-4 bg-black/85 border border-[#CCCCCC]/40 py-1 px-3 text-xs font-mono font-bold text-white uppercase tracking-wider">
+            HANDOVER & OCCUPANCY
+          </div>
+
+          <!-- Before (overlay) -->
+          <div id="before-wrapper" class="absolute inset-0 h-full overflow-hidden" style="width: 50%;">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1400&q=80" alt="Raw Shell" class="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125 brightness-75 max-w-none" style="width: 100%; height: 100%;" id="before-img" />
+            <div class="absolute top-4 left-4 bg-black/85 border border-white/20 py-1 px-3 text-xs font-mono font-bold text-[#CCCCCC] uppercase tracking-wider">
+              RAW CONCRETE SHELL
+            </div>
+          </div>
+
+          <!-- Divider line & handle -->
+          <div id="slider-divider" class="absolute top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#CCCCCC] via-white to-[#999999] pointer-events-none shadow-[0_0_15px_rgba(204,204,204,0.6)]" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white text-black flex items-center justify-center border-2 border-black shadow-[0_0_20px_rgba(204,204,204,0.7)] cursor-ew-resize font-bold text-xs pointer-events-auto">
+              &lt; &gt;
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 bg-[#090A0C] border border-white/10 mt-3 flex justify-between items-center text-xs font-mono text-[#999999]">
+          <span>101 Collins Street, Melbourne CBD • 850 sqm Financial Headquarters</span>
+          <span class="text-white">Full Handover: 10 Weeks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE REVIEWS: CONTINUOUS INFINITE SMOOTH HORIZONTAL MARQUEE -->
+  <section id="endorsements" class="py-24 bg-[#090A0C] border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#111317] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-3">
+          <span class="w-1.5 h-1.5 bg-white inline-block"></span>
+          <span>SOCIAL PROOF</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white font-heading tracking-tighter">
+          Melbourne’s Most Trusted Build Partner.
+        </h2>
+      </div>
+
+      <div class="p-4 bg-[#111317] border border-[#CCCCCC]/40 shadow-[0_0_20px_rgba(204,204,204,0.15)] flex items-center gap-4">
+        <div class="w-11 h-11 bg-white text-black flex items-center justify-center font-black font-heading text-xl">G</div>
+        <div>
+          <div class="flex items-center gap-1 text-[#CCCCCC]">
+            ★★★★★ <span class="ml-1 text-sm font-bold font-mono text-white">5.0 / 5.0</span>
+          </div>
+          <div class="text-[10px] font-mono text-[#CCCCCC] tracking-wider uppercase">VERIFIED GOOGLE BUSINESS REVIEWS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infinite marquee track -->
+    <div class="relative w-full overflow-hidden py-4">
+      <div class="animate-marquee flex gap-6">
+        <!-- Review 1 -->
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Dimitri Kostas</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"Working with James and Matthew was a breath of fresh air. TEAK’s own carpenters built our curved bar and ceiling baffles. Handed over 4 days ahead of schedule."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Saint Urban Dining & Bar • Hospitality Fit-Out</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Sarah Henderson</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"We relocated our 120-person team to 101 Collins. Zero noise complaints, meticulous dust protection, and the directors were personally on site every day at 7 AM."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Fintech Melbourne • Corporate Workplace</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Dr. Anthony Chen</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"Medical and dental construction is notoriously unforgiving with plumbing chases. Passed all health department audits on the first round."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Melbourne Smile Clinic • Healthcare Suite</div>
+        </div>
+
+        <!-- Duplicate set for seamless infinite loop -->
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Dimitri Kostas</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"Working with James and Matthew was a breath of fresh air. TEAK’s own carpenters built our curved bar and ceiling baffles. Handed over 4 days ahead of schedule."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Saint Urban Dining & Bar • Hospitality Fit-Out</div>
+        </div>
+
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Sarah Henderson</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"We relocated our 120-person team to 101 Collins. Zero noise complaints, meticulous dust protection, and the directors were personally on site every day at 7 AM."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Fintech Melbourne • Corporate Workplace</div>
+        </div>
+
+        <div class="w-[380px] shrink-0 bg-[#111317] border border-white/10 hover:border-[#CCCCCC]/50 p-6 shadow-xl">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold text-white">Dr. Anthony Chen</span>
+            <span class="text-xs text-[#CCCCCC]">★★★★★</span>
+          </div>
+          <p class="text-xs text-[#E2E8F0] leading-relaxed mb-3">"Medical and dental construction is notoriously unforgiving with plumbing chases. Passed all health department audits on the first round."</p>
+          <div class="text-[10px] font-mono text-[#777777]">Melbourne Smile Clinic • Healthcare Suite</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section class="py-28 bg-[#090A0C] border-b border-white/10 text-center">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-4xl sm:text-6xl font-extrabold text-white font-heading tracking-tighter leading-tight mb-6">
+        Ready to Build Without the Bureaucracy?
+      </h2>
+      <p class="text-[#999999] text-base max-w-2xl mx-auto mb-10">
+        Skip broker markups. Partner with Melbourne’s hands-on building directors who personally guarantee constructability and schedule fidelity.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:0390008325" class="py-4 px-7 bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-[#CCCCCC] shadow-[0_0_20px_rgba(204,204,204,0.3)]">
+          Call Director James: 03 9000 8325
+        </a>
+        <a href="tel:0390008326" class="py-4 px-7 bg-white text-black font-bold text-xs uppercase tracking-wider hover:bg-[#CCCCCC] shadow-[0_0_20px_rgba(204,204,204,0.3)]">
+          Call Director Matthew: 03 9000 8326
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINIMALIST FOOTER -->
+  <footer class="bg-[#050608] py-12 text-[#777777] text-xs font-mono">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>© 2026 TEAK Building Group Pty Ltd. Victorian Commercial Builder CB-L 67337.</div>
+      <div class="text-white font-bold tracking-widest">[ VIRTUTE AD ALTISSIMA ]</div>
+      <div>Melbourne CBD & Inner Metro Commercial Specialists</div>
+    </div>
+  </footer>
+
+  <!-- CLEAN VANILLA JAVASCRIPT FOR STEP FUNNEL, PILLARS & BEFORE/AFTER SLIDER -->
+  <script>
+    // 1. 4-Step Intake Funnel Logic
+    let currentStep = 1;
+    const totalSteps = 4;
+    const btnNext = document.getElementById('btn-next');
+    const btnBack = document.getElementById('btn-back');
+    const progressBar = document.getElementById('progress-bar');
+    const stepIndicator = document.getElementById('step-indicator');
+
+    function updateStep(step) {
+      for (let i = 1; i <= totalSteps; i++) {
+        document.getElementById(`step-${i}`).classList.add('hidden');
+      }
+      document.getElementById(`step-${step}`).classList.remove('hidden');
+
+      progressBar.style.width = `${(step / totalSteps) * 100}%`;
+      stepIndicator.textContent = `STEP 0${step} / 04`;
+
+      if (step > 1) {
+        btnBack.classList.remove('hidden');
+      } else {
+        btnBack.classList.add('hidden');
+      }
+
+      if (step === totalSteps) {
+        btnNext.textContent = 'Submit Intake ↗';
+      } else {
+        btnNext.textContent = 'Continue Step →';
+      }
+    }
+
+    btnNext.addEventListener('click', () => {
+      if (currentStep < totalSteps) {
+        currentStep++;
+        updateStep(currentStep);
+      } else {
+        // Complete state
+        document.getElementById('intake-form-container').classList.add('hidden');
+        document.getElementById('intake-confirmation').classList.remove('hidden');
+        stepIndicator.textContent = 'DISPATCHED';
+        progressBar.style.width = '100%';
+      }
+    });
+
+    btnBack.addEventListener('click', () => {
+      if (currentStep > 1) {
+        currentStep--;
+        updateStep(currentStep);
+      }
+    });
+
+    // Option Button Highlighting
+    function bindOptions(selector) {
+      document.querySelectorAll(selector).forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll(selector).forEach(b => {
+            b.classList.remove('border-[#CCCCCC]', 'bg-[#181B20]', 'text-white', 'shadow-[0_0_15px_rgba(204,204,204,0.2)]');
+            b.classList.add('border-white/10', 'bg-[#090A0C]', 'text-[#999999]');
+          });
+          btn.classList.add('border-[#CCCCCC]', 'bg-[#181B20]', 'text-white', 'shadow-[0_0_15px_rgba(204,204,204,0.2)]');
+          btn.classList.remove('border-white/10', 'bg-[#090A0C]', 'text-[#999999]');
+        });
+      });
+    }
+    bindOptions('.sector-btn');
+    bindOptions('.area-btn');
+    bindOptions('.prog-btn');
+    bindOptions('.dir-btn');
+
+    // 2. 3-Pillar Switcher Logic
+    const pillarData = [
+      {
+        tagline: 'Direct Master Carpentry & Joinery Fabrication',
+        img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80'
+      },
+      {
+        tagline: 'Guaranteed GMP & Zero Variation Markups',
+        img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+      },
+      {
+        tagline: 'Founders on Site Daily at 06:45 AM',
+        img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80'
+      }
+    ];
+
+    [0, 1, 2].forEach(index => {
+      const tab = document.getElementById(`pillar-${index}`);
+      if (tab) {
+        tab.addEventListener('click', () => {
+          [0, 1, 2].forEach(i => {
+            const t = document.getElementById(`pillar-${i}`);
+            t.className = 'pillar-tab cursor-pointer p-5 border border-white/10 bg-[#111317] hover:border-white/30';
+          });
+          tab.className = 'pillar-tab cursor-pointer p-5 border border-[#CCCCCC] bg-[#181B20] shadow-[0_0_25px_rgba(204,204,204,0.2)]';
+          document.getElementById('pillar-tagline').textContent = pillarData[index].tagline;
+          document.getElementById('pillar-img').src = pillarData[index].img;
+        });
+      }
+    });
+
+    // 3. Before/After Split Drag Slider Logic
+    const sliderContainer = document.getElementById('slider-container');
+    const beforeWrapper = document.getElementById('before-wrapper');
+    const sliderDivider = document.getElementById('slider-divider');
+    const beforeImg = document.getElementById('before-img');
+    let isDragging = false;
+
+    function resizeBeforeImg() {
+      if (sliderContainer && beforeImg) {
+        beforeImg.style.width = sliderContainer.clientWidth + 'px';
+      }
+    }
+    window.addEventListener('resize', resizeBeforeImg);
+    resizeBeforeImg();
+
+    function setSliderPos(clientX) {
+      const rect = sliderContainer.getBoundingClientRect();
+      const x = clientX - rect.left;
+      const pct = Math.max(0, Math.min(100, (x / rect.width) * 100));
+      beforeWrapper.style.width = `${pct}%`;
+      sliderDivider.style.left = `${pct}%`;
+    }
+
+    sliderContainer.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      setSliderPos(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => { isDragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (isDragging) setSliderPos(e.clientX);
+    });
+
+    sliderContainer.addEventListener('touchstart', (e) => {
+      if (e.touches.length > 0) setSliderPos(e.touches[0].clientX);
+    });
+    sliderContainer.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) setSliderPos(e.touches[0].clientX);
+    });
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { BEFORE_AFTER_PROJECTS } from '../data/mockData';
-import { MapPin, Sparkles, ChevronLeft, ChevronRight, SlidersHorizontal, ArrowUpRight } from 'lucide-react';
+import { MapPin, ChevronLeft, ChevronRight, SlidersHorizontal, ArrowUpRight } from 'lucide-react';
 
 export const BeforeAfterShowcase: React.FC = () => {
   const [selectedProjectId, setSelectedProjectId] = useState<string>(BEFORE_AFTER_PROJECTS[0].id);
@@ -56,26 +56,23 @@ export const BeforeAfterShowcase: React.FC = () => {
   }, [isDragging, updatePosition]);
 
   return (
-    <section id="transformations" className="py-24 bg-[#07080a] relative overflow-hidden border-t border-b border-white/10">
-      {/* Background Ambient Gold Radial Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37]/8 rounded-full blur-[180px] pointer-events-none" />
-
+    <section id="transformations" className="py-24 bg-[#090A0C] relative overflow-hidden border-t border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#181c24] border border-[#d4af37]/30 text-[#d4af37] text-xs font-mono mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#d4af37]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#111317] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-3">
+              <span className="w-1.5 h-1.5 bg-white inline-block" />
               <span>THE CRAFTSMANSHIP • TRANSFORMATION SHOWCASE</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-black text-white font-heading tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-white font-heading tracking-tighter">
               Before & After.
             </h2>
           </div>
 
-          <div className="text-sm text-[#cbd5e1] max-w-md">
-            Drag the custom gold divider horizontally to reveal the raw concrete shell transformed into a precision architectural landmark.
+          <div className="text-sm text-[#999999] max-w-md">
+            Drag the custom metallic divider line to reveal raw structural shell versus completed bespoke architectural fit-out.
           </div>
         </div>
 
@@ -90,10 +87,10 @@ export const BeforeAfterShowcase: React.FC = () => {
                   setSelectedProjectId(proj.id);
                   setSliderPosition(50);
                 }}
-                className={`py-2 px-4 rounded-xl text-xs font-bold transition-all border ${
+                className={`py-2 px-4 text-xs font-bold transition-all border ${
                   isSelected
-                    ? 'bg-[#181c24] text-white border-[#d4af37] shadow-[0_0_15px_rgba(212,175,55,0.25)] ring-1 ring-[#d4af37]'
-                    : 'bg-[#0f1117] text-[#94a3b8] border-white/10 hover:border-white/30 hover:text-white'
+                    ? 'bg-[#181B20] text-white border-[#CCCCCC] shadow-[0_0_15px_rgba(204,204,204,0.25)]'
+                    : 'bg-[#111317] text-[#999999] border-white/10 hover:border-white/30 hover:text-white'
                 }`}
               >
                 {proj.title}
@@ -103,27 +100,27 @@ export const BeforeAfterShowcase: React.FC = () => {
         </div>
 
         {/* MAIN SLIDER CONTAINER */}
-        <div className="rounded-2xl bg-gradient-to-b from-[#181c24] to-[#0f1117] border border-[#d4af37]/40 p-2 sm:p-4 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_30px_rgba(212,175,55,0.15)] relative">
+        <div className="bg-[#111317] border border-[#CCCCCC]/30 p-2 sm:p-4 shadow-[0_20px_50px_rgba(0,0,0,0.9),0_0_20px_rgba(204,204,204,0.1)] relative">
           
           {/* Top Info Bar */}
-          <div className="flex flex-wrap items-center justify-between text-xs py-2 px-4 bg-[#0a0c10] rounded-xl border border-white/10 mb-3 gap-3">
+          <div className="flex flex-wrap items-center justify-between text-xs py-2 px-4 bg-[#090A0C] border border-white/10 mb-3 gap-3">
             <div className="flex items-center gap-2 text-white font-medium">
-              <MapPin className="w-3.5 h-3.5 text-[#d4af37]" />
+              <MapPin className="w-3.5 h-3.5 text-[#CCCCCC]" />
               <span>{currentProject.location}</span>
-              <span className="text-[#64748b]">·</span>
-              <span className="font-mono text-[#c5a880] font-bold">{currentProject.sqm}</span>
+              <span className="text-[#666666]">·</span>
+              <span className="font-mono text-[#CCCCCC] font-bold">{currentProject.sqm}</span>
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="text-[11px] font-mono text-[#94a3b8]">Quick Position:</span>
+              <span className="text-[11px] font-mono text-[#999999]">Quick Split:</span>
               {[25, 50, 75].map((pos) => (
                 <button
                   key={pos}
                   onClick={() => setSliderPosition(pos)}
-                  className={`px-2.5 py-0.5 rounded text-[11px] font-mono transition-all border ${
+                  className={`px-2.5 py-0.5 text-[11px] font-mono transition-all border ${
                     sliderPosition === pos
-                      ? 'bg-[#d4af37] text-black font-bold border-[#d4af37]'
-                      : 'bg-[#181c24] text-[#cbd5e1] border-white/10 hover:border-white/30'
+                      ? 'bg-white text-black font-bold border-white'
+                      : 'bg-[#181B20] text-[#CCCCCC] border-white/10 hover:border-white/30'
                   }`}
                 >
                   {pos}%
@@ -138,18 +135,18 @@ export const BeforeAfterShowcase: React.FC = () => {
             onMouseDown={handleMouseDown}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
-            className="relative w-full h-[380px] sm:h-[480px] lg:h-[600px] rounded-xl overflow-hidden select-none cursor-ew-resize border border-white/10 group"
+            className="relative w-full h-[380px] sm:h-[480px] lg:h-[600px] overflow-hidden select-none cursor-ew-resize border border-white/10 group"
           >
             {/* COMPLETED / AFTER IMAGE (Base Full-Width) */}
             <div className="absolute inset-0 w-full h-full">
               <img
                 src={currentProject.afterImage}
                 alt={`${currentProject.title} Completed`}
-                className="w-full h-full object-cover object-center filter brightness-95"
+                className="w-full h-full object-cover object-center filter contrast-110 brightness-95"
               />
-              {/* After Label Badge */}
-              <div className="absolute top-4 right-4 bg-black/85 backdrop-blur-md border border-[#d4af37]/40 py-1.5 px-3.5 rounded-full text-xs font-mono font-bold text-white uppercase tracking-wider shadow-lg flex items-center gap-2 pointer-events-none">
-                <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
+              {/* After Label Badge in Chrome */}
+              <div className="absolute top-4 right-4 bg-black/85 backdrop-blur-md border border-[#CCCCCC]/40 py-1.5 px-3.5 text-xs font-mono font-bold text-white uppercase tracking-wider shadow-lg flex items-center gap-2 pointer-events-none">
+                <span className="w-2 h-2 bg-white inline-block"></span>
                 <span>{currentProject.afterLabel}</span>
               </div>
             </div>
@@ -171,28 +168,28 @@ export const BeforeAfterShowcase: React.FC = () => {
               {/* Dark subtle overlay */}
               <div className="absolute inset-0 bg-black/30 pointer-events-none" />
               {/* Before Label Badge */}
-              <div className="absolute top-4 left-4 bg-black/85 backdrop-blur-md border border-white/20 py-1.5 px-3.5 rounded-full text-xs font-mono font-bold text-[#cbd5e1] uppercase tracking-wider shadow-lg pointer-events-none">
+              <div className="absolute top-4 left-4 bg-black/85 backdrop-blur-md border border-white/20 py-1.5 px-3.5 text-xs font-mono font-bold text-[#CCCCCC] uppercase tracking-wider shadow-lg pointer-events-none">
                 {currentProject.beforeLabel}
               </div>
             </div>
 
-            {/* CUSTOM DRAGGABLE GOLD/WHITE SLIDER HANDLE WITH < > ICONS */}
+            {/* CUSTOM METALLIC DIVIDER LINE & DRAG HANDLE WITH < > ICONS */}
             <div
-              className="absolute top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#d4af37] via-white to-[#c5a880] cursor-ew-resize z-20 pointer-events-none"
+              className="absolute top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#CCCCCC] via-white to-[#999999] cursor-ew-resize z-20 pointer-events-none shadow-[0_0_15px_rgba(204,204,204,0.6)]"
               style={{ left: `${sliderPosition}%` }}
             >
-              {/* Center Knurled Gold Pill Handle with < > Icons */}
-              <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-gradient-to-tr from-[#d4af37] via-[#f3df9b] to-[#c5a880] text-black flex items-center justify-center border-2 border-black shadow-[0_0_20px_rgba(212,175,55,0.6)] pointer-events-auto cursor-ew-resize hover:scale-110 transition-transform">
+              {/* Center Knurled Silver Handle with < > Icons */}
+              <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white text-black flex items-center justify-center border-2 border-black shadow-[0_0_20px_rgba(204,204,204,0.7)] pointer-events-auto cursor-ew-resize hover:scale-110 transition-transform">
                 <div className="flex items-center -space-x-1">
-                  <ChevronLeft className="w-4 h-4 stroke-[2.5]" />
-                  <ChevronRight className="w-4 h-4 stroke-[2.5]" />
+                  <ChevronLeft className="w-4 h-4 stroke-[3]" />
+                  <ChevronRight className="w-4 h-4 stroke-[3]" />
                 </div>
               </div>
             </div>
           </div>
 
           {/* Accessible slider controls */}
-          <div className="mt-3 flex items-center justify-between text-xs text-[#94a3b8] px-2">
+          <div className="mt-3 flex items-center justify-between text-xs text-[#999999] px-2">
             <span className="font-mono">RAW CONCRETE SHELL</span>
             <input
               type="range"
@@ -201,20 +198,20 @@ export const BeforeAfterShowcase: React.FC = () => {
               value={sliderPosition}
               onChange={(e) => setSliderPosition(Number(e.target.value))}
               aria-label="Comparison slider position"
-              className="w-1/2 accent-[#d4af37] h-1.5 bg-[#1e2330] rounded-lg cursor-pointer"
+              className="w-1/2 accent-white h-1 bg-[#181B20] cursor-pointer"
             />
-            <span className="font-mono text-[#d4af37] font-semibold">HANDOVER & OCCUPANCY</span>
+            <span className="font-mono text-white font-semibold">HANDOVER & OCCUPANCY</span>
           </div>
 
           {/* Details Bar */}
-          <div className="mt-4 p-4 rounded-xl bg-[#0a0c10] border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <p className="text-xs sm:text-sm text-[#cbd5e1] leading-relaxed max-w-3xl">
-              <strong className="text-[#d4af37] font-mono uppercase text-xs mr-2 block sm:inline">Execution Notes:</strong>
+          <div className="mt-4 p-4 bg-[#090A0C] border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <p className="text-xs sm:text-sm text-[#CCCCCC] leading-relaxed max-w-3xl">
+              <strong className="text-white font-mono uppercase text-xs mr-2 block sm:inline">Execution Notes:</strong>
               {currentProject.details}
             </p>
             <a
               href="#qualification-terminal"
-              className="shrink-0 py-2.5 px-5 rounded-lg bg-[#d4af37]/15 border border-[#d4af37]/40 text-[#d4af37] hover:bg-[#d4af37] hover:text-black text-xs font-bold uppercase tracking-wider transition-all text-center"
+              className="shrink-0 py-2.5 px-5 bg-transparent border border-[#CCCCCC]/40 text-white hover:bg-white hover:text-black text-xs font-bold uppercase tracking-wider transition-all text-center"
             >
               Inquire on Similar Scope ↗
             </a>
