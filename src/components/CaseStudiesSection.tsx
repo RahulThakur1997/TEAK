@@ -39,9 +39,9 @@ export const CaseStudiesSection: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover filter contrast-125 grayscale brightness-85 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#111317] via-transparent to-black/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#13161F] via-transparent to-black/25" />
 
                 {/* Top badges */}
                 <div className="absolute top-4 left-4 flex items-center gap-2">

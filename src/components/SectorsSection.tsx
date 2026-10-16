@@ -81,26 +81,27 @@ export const SectorsSection: React.FC<SectorsSectionProps> = ({ onSelectSector }
                 key={sector.id}
                 className="group bg-[#111317] border border-white/10 hover:border-[#CCCCCC] hover:shadow-[0_0_25px_rgba(204,204,204,0.2)] transition-all duration-400 flex flex-col justify-between overflow-hidden relative shadow-lg"
               >
-                {/* Image Frame with Micro-tags */}
-                <div className="relative aspect-[16/10] overflow-hidden bg-black">
+                {/* Image Frame with Micro-tags (100% Full Vibrant Natural Color) */}
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#0A0C10]">
                   <img
                     src={sector.image}
                     alt={sector.title}
-                    className="w-full h-full object-cover filter contrast-125 grayscale brightness-85 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#111317] via-transparent to-black/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#13161F] via-transparent to-black/20" />
 
-                  {/* Micro-tags */}
+                  {/* Micro-tags with vibrant emerald dot */}
                   <div className="absolute top-3 left-3 flex items-center gap-2">
-                    <span className="px-2.5 py-1 bg-black/85 backdrop-blur-md border border-[#CCCCCC]/40 text-[10px] font-mono font-bold text-white flex items-center gap-1">
+                    <span className="px-2.5 py-1 bg-[#0A0C10]/90 backdrop-blur-md border border-[#CCCCCC]/40 text-[10px] font-mono font-bold text-white flex items-center gap-1.5 shadow-md">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
                       <MapPin className="w-3 h-3 text-[#CCCCCC]" />
                       <span>{loc.precinct}</span>
                     </span>
                   </div>
 
                   {/* Reveal Delivery Timeline on Hover */}
-                  <div className="absolute top-3 right-3 px-2.5 py-1 bg-black/85 backdrop-blur-md border border-white/20 text-[10px] font-mono text-[#CCCCCC] flex items-center gap-1">
-                    <Clock className="w-3 h-3 text-white" />
+                  <div className="absolute top-3 right-3 px-2.5 py-1 bg-[#0A0C10]/90 backdrop-blur-md border border-white/20 text-[10px] font-mono text-[#CCCCCC] flex items-center gap-1 shadow-md">
+                    <Clock className="w-3 h-3 text-[#3B82F6]" />
                     <span>{loc.timeline}</span>
                   </div>
                 </div>

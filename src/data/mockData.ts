@@ -7,7 +7,7 @@ export const SECTORS_DATA: SectorItem[] = [
     title: 'Hospitality & Dining',
     subtitle: 'Cafés, Signature Restaurants, Wine Bars & Nightlife',
     description: 'Specialised high-cadence hospitality fit-outs built around kitchen extraction, grease trap sequencing, acoustic dampening, and bespoke patron flow.',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80',
     metrics: 'Typically 6-10 Week Turnarounds',
     capabilities: [
       'Commercial grade kitchen & bar hydraulic installs',

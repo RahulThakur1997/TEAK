@@ -151,9 +151,9 @@ export const AboutSection: React.FC = () => {
               <img
                 src={currentPillar.image}
                 alt={currentPillar.title}
-                className="w-full h-full object-cover filter contrast-125 grayscale brightness-80 transition-transform duration-700 group-hover:scale-103"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090A0C] via-transparent to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0C10] via-transparent to-black/20" />
 
               {/* Monospaced Technical Badge */}
               <div className="absolute top-6 left-6 px-4 py-1.5 bg-[#090A0C]/90 backdrop-blur-md border border-[#CCCCCC]/60 shadow-[0_0_15px_rgba(204,204,204,0.2)]">
@@ -210,9 +210,9 @@ export const AboutSection: React.FC = () => {
                           target.src = dir.fallbackImage;
                         }
                       }}
-                      className="w-full h-full object-cover object-top filter grayscale contrast-125 brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-500"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
                   </div>
 
                   {/* Director Details */}

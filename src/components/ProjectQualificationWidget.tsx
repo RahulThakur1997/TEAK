@@ -21,24 +21,23 @@ interface ProjectQualificationWidgetProps {
 }
 
 const SECTOR_OPTIONS = [
-  { id: 'hospitality', label: 'Hospitality / Cafe', icon: Utensils, desc: 'Dining, bars & commercial kitchens' },
-  { id: 'commercial', label: 'Commercial Workplace', icon: Briefcase, desc: 'Corporate HQs & acoustic suites' },
-  { id: 'medical', label: 'Medical & Specialist', icon: Stethoscope, desc: 'Clinics, day surgeries & dental suites' },
-  { id: 'retail', label: 'Retail & Flagship', icon: ShoppingBag, desc: 'Boutiques & visual showrooms' },
-  { id: 'residential', label: 'Bespoke Residential', icon: Home, desc: 'Luxury penthouses & private works' },
+  { id: 'hospitality', label: 'Hospitality', icon: Utensils, desc: 'Dining, cafés, bars & commercial kitchens' },
+  { id: 'commercial', label: 'Commercial Office', icon: Briefcase, desc: 'Corporate workplaces & acoustic suites' },
+  { id: 'medical', label: 'Medical & Specialist', icon: Stethoscope, desc: 'Clinics, specialist suites & cleanrooms' },
+  { id: 'retail', label: 'Retail & Flagship', icon: ShoppingBag, desc: 'Boutiques, flagships & showrooms' },
 ];
 
 const AREA_PRESETS = [
-  { id: 'under150', label: 'Under 150m²', desc: 'Boutique footprint / Rapid turnaround' },
-  { id: '150-500', label: '150 – 500m²', desc: 'Standard hospitality or mid-scale office' },
-  { id: '500-1500', label: '500 – 1,500m²', desc: 'Multi-zone enterprise or clinical suite' },
-  { id: '1500plus', label: '1,500m²+', desc: 'Major commercial floorplate revamp' }
+  { id: 'under150', label: '< 150m²', desc: 'Boutique footprint / Rapid turnaround' },
+  { id: '150-400', label: '150 – 400m²', desc: 'Standard hospitality or mid-scale workplace' },
+  { id: '400-1000', label: '400 – 1,000m²', desc: 'Multi-zone enterprise or clinical floor' },
+  { id: '1000plus', label: '1,000m²+', desc: 'Major commercial floorplate fit-out' }
 ];
 
 const TIMELINE_OPTIONS = [
-  { id: 'immediate', label: 'Immediate / Within 60 Days', desc: 'Fast-track site commencement & critical staging' },
-  { id: '3to6', label: '3 – 6 Months', desc: 'Detailed documentation & permits in progress' },
-  { id: 'tender', label: 'Preliminary Tender / ECI Planning', desc: 'Early Contractor Involvement & constructability reviews' },
+  { id: 'immediate', label: 'Immediate / Within 60 Days', desc: 'Fast-track site commencement & sequencing' },
+  { id: '2to4', label: '2 – 4 Months', desc: 'Permits, architectural plans & procurement' },
+  { id: 'tender', label: 'Tender / ECI Stage', desc: 'Early Contractor Involvement & feasibility' },
 ];
 
 export const ProjectQualificationWidget: React.FC<ProjectQualificationWidgetProps> = ({

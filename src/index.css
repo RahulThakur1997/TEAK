@@ -4,18 +4,21 @@
   :root {
     --font-heading: 'Space Grotesk', 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --obsidian: #090A0C;
-    --charcoal: #111317;
-    --slate: #181B20;
+    --obsidian: #0A0C10;
+    --charcoal: #13161F;
+    --slate: #1D2230;
     --silver-glow: rgba(204, 204, 204, 0.25);
     --silver-border: rgba(204, 204, 204, 0.3);
     --chrome: #E2E8F0;
     --technical-gray: #999999;
+    --google-amber: #FBBC05;
+    --emerald-tag: #10B981;
+    --cobalt-tag: #3B82F6;
   }
 
   body {
     font-family: var(--font-body);
-    background-color: #090A0C;
+    background-color: #0A0C10;
     color: #E2E8F0;
     overflow-x: hidden;
   }

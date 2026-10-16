@@ -159,17 +159,18 @@ export const BeforeAfterShowcase: React.FC = () => {
               <img
                 src={currentProject.beforeImage}
                 alt={`${currentProject.title} Before`}
-                className="absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-125 brightness-75 max-w-none"
+                className="absolute inset-0 w-full h-full object-cover object-center max-w-none"
                 style={{
                   width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%',
                   height: '100%'
                 }}
               />
-              {/* Dark subtle overlay */}
-              <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+              {/* Subtle edge vignette */}
+              <div className="absolute inset-0 bg-black/10 pointer-events-none" />
               {/* Before Label Badge */}
-              <div className="absolute top-4 left-4 bg-black/85 backdrop-blur-md border border-white/20 py-1.5 px-3.5 text-xs font-mono font-bold text-[#CCCCCC] uppercase tracking-wider shadow-lg pointer-events-none">
-                {currentProject.beforeLabel}
+              <div className="absolute top-4 left-4 bg-[#0A0C10]/90 backdrop-blur-md border border-white/25 py-1.5 px-3.5 text-xs font-mono font-bold text-[#E2E8F0] uppercase tracking-wider shadow-lg pointer-events-none flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3B82F6]" />
+                <span>{currentProject.beforeLabel}</span>
               </div>
             </div>
 

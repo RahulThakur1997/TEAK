@@ -34,7 +34,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#090A0C] text-[#E2E8F0] selection:bg-[#CCCCCC] selection:text-black">
+    <div className="min-h-screen bg-[#0A0C10] text-[#E2E8F0] selection:bg-[#CCCCCC] selection:text-black">
       {/* 1. TOP NAVIGATION: Floating Frosted Glass Capsule */}
       <Navbar onOpenConsult={() => setDirectorModalOpen(true)} />
 
@@ -77,7 +77,7 @@ export default function App() {
       {/* DIRECTORS DIRECT CONSULT MODAL */}
       {directorModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-xl">
-          <div className="bg-[#111317] border border-[#CCCCCC]/40 max-w-lg w-full p-6 sm:p-8 shadow-[0_0_40px_rgba(204,204,204,0.18)] relative animate-fadeIn">
+          <div className="bg-[#13161F] border border-[#CCCCCC]/40 max-w-lg w-full p-6 sm:p-8 shadow-[0_0_40px_rgba(204,204,204,0.18)] relative animate-fadeIn">
             <button
               onClick={() => {
                 setDirectorModalOpen(false);
@@ -88,7 +88,7 @@ export default function App() {
               [CLOSE]
             </button>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#181B20] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#1A1E29] border border-[#CCCCCC]/30 text-[#CCCCCC] text-xs font-mono mb-2">
               <HardHat className="w-3.5 h-3.5 text-white" />
               <span>DIRECTOR DIRECT CONSULT</span>
             </div>
@@ -101,7 +101,7 @@ export default function App() {
             </p>
 
             {consultBooked ? (
-              <div className="p-6 bg-[#090A0C] border border-[#CCCCCC]/40 text-center space-y-3 shadow-lg">
+              <div className="p-6 bg-[#0A0C10] border border-[#CCCCCC]/40 text-center space-y-3 shadow-lg">
                 <div className="w-10 h-10 mx-auto bg-white text-black flex items-center justify-center shadow-md">
                   <Check className="w-6 h-6" />
                 </div>
@@ -126,24 +126,34 @@ export default function App() {
                 <div className="grid grid-cols-2 gap-3">
                   <a
                     href="tel:0390008325"
-                    className="p-3.5 bg-[#181B20] border border-[#CCCCCC]/30 hover:border-white transition-colors block text-left"
+                    className="p-3 bg-[#1A1E29] border border-[#CCCCCC]/30 hover:border-white transition-colors flex items-center gap-3 text-left shadow-sm group"
                   >
-                    <span className="text-[10px] font-mono text-[#CCCCCC] block font-bold">CO-DIRECTOR</span>
-                    <span className="text-xs font-bold text-white block">James Papadimitriou</span>
-                    <span className="text-[11px] font-mono text-[#999999] mt-1 flex items-center gap-1">
-                      <PhoneCall className="w-3 h-3 text-[#CCCCCC]" /> 03 9000 8325
-                    </span>
+                    <img
+                      src="/james-director.jpg"
+                      alt="James"
+                      className="w-10 h-10 object-cover object-top border border-white/20 shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="text-[9px] font-mono text-[#10B981] block font-bold">CO-DIRECTOR</span>
+                      <span className="text-xs font-bold text-white block truncate">James P.</span>
+                      <span className="text-[10px] font-mono text-[#CCCCCC] truncate block">03 9000 8325</span>
+                    </div>
                   </a>
 
                   <a
                     href="tel:0390008326"
-                    className="p-3.5 bg-[#181B20] border border-[#CCCCCC]/30 hover:border-white transition-colors block text-left"
+                    className="p-3 bg-[#1A1E29] border border-[#CCCCCC]/30 hover:border-white transition-colors flex items-center gap-3 text-left shadow-sm group"
                   >
-                    <span className="text-[10px] font-mono text-[#CCCCCC] block font-bold">CO-DIRECTOR</span>
-                    <span className="text-xs font-bold text-white block">Matthew Papadimitriou</span>
-                    <span className="text-[11px] font-mono text-[#999999] mt-1 flex items-center gap-1">
-                      <PhoneCall className="w-3 h-3 text-[#CCCCCC]" /> 03 9000 8326
-                    </span>
+                    <img
+                      src="/matthew-director.jpg"
+                      alt="Matthew"
+                      className="w-10 h-10 object-cover object-top border border-white/20 shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="text-[9px] font-mono text-[#3B82F6] block font-bold">CO-DIRECTOR</span>
+                      <span className="text-xs font-bold text-white block truncate">Matthew P.</span>
+                      <span className="text-[10px] font-mono text-[#CCCCCC] truncate block">03 9000 8326</span>
+                    </div>
                   </a>
                 </div>
 
