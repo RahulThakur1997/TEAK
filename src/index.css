@@ -2,57 +2,100 @@
 
 @layer base {
   :root {
-    --font-heading: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-crest: 'Cinzel', Georgia, serif;
+    --font-heading: 'Syne', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --gold: #d4af37;
+    --gold-warm: #c5a880;
+    --obsidian: #07080a;
+    --charcoal: #0f1117;
+    --slate-surface: #181c24;
   }
 
   body {
     font-family: var(--font-body);
-    background-color: #08090B;
-    color: #CCCCCC;
+    background-color: #07080a;
+    color: #e2e8f0;
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, .font-heading {
     font-family: var(--font-heading);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
   }
 
-  .font-crest {
-    font-family: var(--font-crest);
-    letter-spacing: 0.12em;
+  .font-serif-accent {
+    font-family: var(--font-serif);
   }
 }
 
-/* Custom architectural grid & scanlines for background subtle depth */
+/* Gold ambient gradients and glows */
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow-subtle {
+  box-shadow: 0 0 40px -10px rgba(197, 168, 128, 0.15);
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.15);
+}
+
+.bg-radial-gold {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.12) 0%, rgba(7, 8, 10, 0) 70%);
+}
+
+.bg-radial-amber-hero {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212, 175, 55, 0.15), rgba(7, 8, 10, 0));
+}
+
 .bg-architectural-grid {
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
+  background-size: 50px 50px;
 }
 
-.bg-dot-matrix {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
-  background-size: 24px 24px;
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-/* Custom subtle dark scrollbar */
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom subtle dark scrollbar with gold hint */
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #08090B;
+  background: #07080a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #23272F;
-  border-radius: 4px;
+  background: #1e2330;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3A404D;
+  background: #c5a880;
 }
