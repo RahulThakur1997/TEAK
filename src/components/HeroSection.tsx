@@ -9,7 +9,7 @@ interface HeroSectionProps {
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsult }) => {
   return (
     <section id="overview" className="relative pt-32 sm:pt-36 lg:pt-40 pb-16 lg:pb-24 min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#0A0C10]">
-      {/* Background Video - 100% Full Vibrant Natural Color with subtle edge vignettes only */}
+      {/* Background Video - Commercial Construction Montage from Vimeo in 100% Full Vibrant Natural Color */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <video 
           autoPlay 
@@ -17,12 +17,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenConsult }) => {
           loop 
           playsInline 
           preload="auto"
-          poster="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80"
-          className="w-full h-full object-cover opacity-75 filter brightness-95 contrast-105"
+          poster="/vimeo-hero-poster.jpg"
+          className="w-full h-full object-cover opacity-80 filter brightness-95 contrast-105"
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-architectural-living-room-41551-large.mp4" type="video/mp4" />
+          <source src="/vimeo-hero.mp4" type="video/mp4" />
           <source src="/hero-bg.mp4" type="video/mp4" />
-          <source src="https://cdn.jumpshare.com/preview/ul7Gxzt1WJbWYc1lC_s-Vwmb3lc2dD_cemUCbzl3pRkHXtX1YDvtlKrIe5mN0k7CmonMEH8arT25r6l6Y7BTDClQ1aySFEj8MvfMe-Fv-5KXUyHxfq6tk4n0gA3SReLgkXTBrfV985gZZB6_9vmuXm6yjbN-I2pg_cnoHs_AmgI-jtLDez1CmKkPH.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-architectural-living-room-41551-large.mp4" type="video/mp4" />
         </video>
         {/* Subtle Edge Gradient Vignettes only - keeps video natural and vibrant while ensuring readable text */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0C10] via-[#0A0C10]/75 to-transparent"></div>
