@@ -66,7 +66,9 @@ export interface BeforeAfterProject {
   location: string;
   sqm: string;
   beforeImage: string;
+  fallbackBeforeImage?: string;
   afterImage: string;
+  fallbackAfterImage?: string;
   beforeLabel: string;
   afterLabel: string;
   details: string;

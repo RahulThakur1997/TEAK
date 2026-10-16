@@ -94,8 +94,10 @@ export const BEFORE_AFTER_PROJECTS: BeforeAfterProject[] = [
     title: 'Synechron Melbourne Financial Headquarters',
     location: '101 Collins Street, Melbourne CBD',
     sqm: '850 sqm',
-    beforeImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=1400&q=80',
-    afterImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80',
+    beforeImage: 'https://i.postimg.cc/Hs2K77qB/Gemini-Generated-Image-z6crfaz6crfaz6cr.png',
+    fallbackBeforeImage: '/synechron-before.png',
+    afterImage: 'https://i.postimg.cc/hPrw77k5/Gemini-Generated-Image-rv1h76rv1h76rv1h.png',
+    fallbackAfterImage: '/synechron-after.png',
     beforeLabel: 'Raw Concrete Shell — Week 0',
     afterLabel: 'Handover & Occupancy — Week 10',
     details: 'Complete strip-out of obsolete 1990s floorplate to exposed industrial slabs, followed by full installation of acoustic timber slats, executive boardroom, glass partitions, and integrated boardroom AV.'

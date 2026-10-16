@@ -6,6 +6,7 @@ export const BeforeAfterShowcase: React.FC = () => {
   const [selectedProjectId, setSelectedProjectId] = useState<string>(BEFORE_AFTER_PROJECTS[0].id);
   const [sliderPosition, setSliderPosition] = useState<number>(50); // percentage 0 - 100
   const [isDragging, setIsDragging] = useState<boolean>(false);
+  const [containerWidth, setContainerWidth] = useState<number>(1200);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const currentProject = BEFORE_AFTER_PROJECTS.find(p => p.id === selectedProjectId) || BEFORE_AFTER_PROJECTS[0];
@@ -35,6 +36,17 @@ export const BeforeAfterShowcase: React.FC = () => {
       updatePosition(e.touches[0].clientX);
     }
   };
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.clientWidth);
+      }
+    };
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
 
   useEffect(() => {
     const handleMouseUp = () => setIsDragging(false);
@@ -142,7 +154,13 @@ export const BeforeAfterShowcase: React.FC = () => {
               <img
                 src={currentProject.afterImage}
                 alt={`${currentProject.title} Completed`}
-                className="w-full h-full object-cover object-center filter contrast-110 brightness-95"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (currentProject.fallbackAfterImage && target.src !== currentProject.fallbackAfterImage) {
+                    target.src = currentProject.fallbackAfterImage;
+                  }
+                }}
+                className="w-full h-full object-cover object-center filter contrast-105 brightness-95"
               />
               {/* After Label Badge in Chrome */}
               <div className="absolute top-4 right-4 bg-black/85 backdrop-blur-md border border-[#CCCCCC]/40 py-1.5 px-3.5 text-xs font-mono font-bold text-white uppercase tracking-wider shadow-lg flex items-center gap-2 pointer-events-none">
@@ -159,9 +177,15 @@ export const BeforeAfterShowcase: React.FC = () => {
               <img
                 src={currentProject.beforeImage}
                 alt={`${currentProject.title} Before`}
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (currentProject.fallbackBeforeImage && target.src !== currentProject.fallbackBeforeImage) {
+                    target.src = currentProject.fallbackBeforeImage;
+                  }
+                }}
                 className="absolute inset-0 w-full h-full object-cover object-center max-w-none"
                 style={{
-                  width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%',
+                  width: `${containerWidth}px`,
                   height: '100%'
                 }}
               />
